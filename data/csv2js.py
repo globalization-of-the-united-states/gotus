@@ -77,7 +77,7 @@ for line in reader:
     marker_obj["hist-loc"] = line["Historic Location"]
     marker_obj["pres-loc"] = line["Present Location"]
     marker_obj["src"] = line["Source"]
-    marker_obj["url"] = line["URL"]
+    #marker_obj["url"] = line["URL"] # URL data for markers removed from spreadsheet, September 2015
     if line["Category"] != "" and line["Sub Category"] != "" and line["Start Year"] != "" and line["Title"] != "" and line["Present Lat"] != "" and line["Present Lon"] != "":
       marker_list.append(marker_obj)
 
@@ -94,7 +94,7 @@ for line in reader:
     shape_obj["pres-loc"] = line["Present Location"]
     shape_obj["json"] = line["GeoJSON"]
     shape_obj["src"] = line["Source"]
-    shape_obj["url"] = line["URL"]
+    #shape_obj["url"] = line["URL"]
     if line["Category"] != "" and line["Sub Category"] != "" and line["Start Year"] != "" and line["Title"] != "" and line["GeoJSON"] != "":
       shape_list.append(shape_obj)
 
@@ -170,10 +170,8 @@ for index, marker in enumerate(marker_list):
   else:
     pres_loc = "<br/><b>Present Location:</b> "
 
-  if marker["src"] != "" and marker["url"] != "":
-    src = "<br/><b>Source:</b> <a href='{0}'>{1}</a>".format(marker["url"], marker["src"])
-  elif marker["src"] != "" and marker["url"] == "":
-    src = "<br/><b>Source:</b> {1}".format(marker["url"], marker["src"])
+  if marker["src"] != "":
+    src = "<br/><b>Source:</b> {0}".format(marker["src"])
   else:
     src = "<br/><Source:</b> "
 
@@ -266,10 +264,8 @@ for index, shape in enumerate(shape_list):
   else:
     pres_loc = "<br/><b>Present Location:</b> "
 
-  if shape["src"] != "" and shape["url"] != "":
-    src = "<br/><b>Source:</b> <a href='{0}'>{1}</a>".format(shape["url"], shape["src"])
-  elif shape["src"] != "" and shape["url"] == "":
-    src = "<br/><b>Source:</b> {1}".format(shape["url"], shape["src"])
+  if shape["src"] != "":
+    src = "<br/><b>Source:</b> {0}".format(shape["src"])
   else:
     src = "<br/><Source:</b> "
 
