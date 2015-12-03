@@ -5,7 +5,7 @@ label{padding-top:0em;padding-bottom:0em;color:#451401;}
 #map{margin-top:13px;margin-left:auto;margin-right:auto;border:1px solid #451401;height:65%;width:85%;}
 .icon-hint{height:15px;width:20px;}
 .overlay-icon{margin:0px 2px 0px 0px;}
-#timeline-group{margin-top:auto;margin-left:auto;margin-right:auto;height:20%;}
+#timeline-group{margin-bottom:80px;margin-top:auto;margin-left:auto;margin-right:auto;height:20%;}
 #current-year{margin-left:auto;margin-right:auto;text-align:center;font-size:20px !important;font-weight:bold;color:#e8dab8;width:252px;padding:3px 0;border:1px solid #451401;background-color:#803402;}
 #slider{margin-left:auto;margin-right:auto;margin-bottom:20px;width:80%;}
 #control-group{margin-left:auto;margin-right:auto;}
@@ -28,3 +28,7 @@ label{padding-top:0em;padding-bottom:0em;color:#451401;}
 .ui-state-default{border:1px solid #451401 !important;background:#ac5116 !important;}
 .ui-state-hover{background:#803402 !important;}
 .leaflet-control-layers-toggle{background-image:url("map-data.png") !important;background-size:160px 50px !important;height:50px !important;width:160px !important;border:1px solid #451401;}
+#cc{margin-left:auto;margin-right:auto;width:80%;}
+#cc a:hover{color:#113A39 !important;}
+#cc a:link{color:#267375;}
+#cc a:visited{color:#267375;}
