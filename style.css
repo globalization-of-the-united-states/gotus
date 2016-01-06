@@ -1,16 +1,17 @@
-body{font-family:"Volkhov",Cambria,Georgia,serif;font-size:16px;font-weight:300;line-height:24px;word-wrap:break-word;height:100%;}
+body{font-family:"Volkhov",Cambria,Georgia,serif;font-size:16px;font-weight:300;line-height:24px;word-wrap:break-word;height:100%;margin:0;}
 html{background-color:#F8F4E9;background-color:transparent !important;height:100% !important;}
 a{text-decoration:none;}
 header{background-image:url(../../../images/ColtonsGeneralAtlasoftheWorld.jpg);background-position:center;border-bottom:solid 8px #AC5116;padding-left:15%;padding-right:15%;}
 header:after{content:"";display:table;clear:both;}
-#map-menu{font-size:20px !important;float:right !important;margin-top:40px;margin-bottom:86px;line-height:40px;text-align:right;}
-#map-menu a{padding:2px 8px !important;}
+#map-menu{font-size:20px !important;float:right !important;margin-top:40px;margin-bottom:70px;line-height:40px;text-align:right;}
+#map-menu a{border: 1px solid #451401;padding:2px 8px !important;}
 #map-menu a:active{background-color:#ac5116;color:#e8dab8;}
 #map-menu a:hover{background-color:#803402 !important;color:#e8dab8;}
 #map-menu a:link{background-color:#ac5116;color:#e8dab8;}
 #map-menu a:visited{background-color:#ac5116;color:#e8dab8;}
-#site-title{font-size:32px;line-height:48px;font-weight:300;text-align:center;margin:0;padding-top:1em;padding-bottom:0;color:#AC5116;}
+#site-title{font-size:32px;line-height:48px;font-weight:300;text-align:center;margin:0;padding-top:26px;padding-bottom:0;color:#AC5116;display:inline;float:left;width:50%;}
 #site-title img{width:100%;margin:0;padding:0;}
+#site-title:after{content:"";display:block;height:0px;clear:both;}
 #map{margin-top:13px;margin-left:auto;margin-right:auto;border:1px solid #451401;height:65%;width:85%;}
 .leaflet-control-layers-toggle{background-image:url("map-data.png") !important;background-size:160px 50px !important;height:50px !important;width:160px !important;border:1px solid #451401;}
 .leaflet-control-layers-group .ui-widget{font:12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;color:#e8dab8;font-weight:bold;}
@@ -25,16 +26,17 @@ input[type=checkbox]{margin-right:10px !important;float:left;}
 #slider{margin-left:auto;margin-right:auto;margin-bottom:20px;width:80%;}
 .ui-widget-content{border:1px solid #ac5116 !important;}
 .ui-state-default{border:1px solid #451401 !important;background:#ac5116 !important;}
-#control-group{margin-left:auto;margin-right:auto;}
-#control-group ul{clear:left;float:left;list-style:none;margin:0;padding:0;position:relative;left:50%;text-align:center;}
-#control-group ul li{display:block;float:left;list-style:none;margin:0;padding:0;position:relative;right:50%;margin-bottom:28px;color:#e8dab8 !important;}
-#control-group ul li button{display:block;margin:0 0 0 1px;padding:3px 10px;text-decoration:none;line-height:1.3em;background-color:#ac5116;}
-input[type=submit], button, .button{ height:35px;border:0;color:#fff;text-transform:uppercase;cursor:pointer;box-sizing:border-box;}
+#button-group{margin-left:auto;margin-right:auto;}
+#button-group ul{clear:left;float:left;list-style:none;margin:0;padding:0;position:relative;left:50%;text-align:center;}
+#button-group ul li{display:block;float:left;list-style:none;margin:0;padding:0;position:relative;right:50%;margin-bottom:28px;color:#e8dab8 !important;}
+#button-group ul li button{display:block;margin:0 0 0 4px;padding:3px 10px;text-decoration:none;line-height:1.3em;background-color:#ac5116;}
+input[type=submit], button, .button{height:35px;border:1px solid #451401;color:#fff;text-transform:uppercase;cursor:pointer;box-sizing:border-box;}
 .button-icon{max-height:30px;max-width:30px;}
-#cc{margin-left:auto;margin-right:auto;width:80%;}
-#cc a:hover{color:#113A39 !important;}
-#cc a:link{color:#267375;}
-#cc a:visited{color:#267375;}
+#license{font-size:14px;margin-left:auto;margin-right:auto;width:80%;}
+#license img {align:left;margin:0;padding:0;}
+#license a:hover{color:#113A39 !important;}
+#license a:link{color:#267375;}
+#license a:visited{color:#267375;}
 #bottom-map{background-image:url(http://globalization1789-1861.indiana.edu/exhibit/images/ColtonsGeneralAtlasoftheWorld.jpg);margin-top:29px;padding-bottom:150px;border-top:8px solid #ac5116;}
 .ui-state-hover{background:#803402 !important;}
 .leaflet-control-layers-group .ui-state-hover{background:#803402;}
